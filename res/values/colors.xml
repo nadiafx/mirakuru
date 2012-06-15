@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Shortcut colors -->
+    <color name="wgt_shortcut_unread_count_color">#ffffffff</color>
+    <color name="wgt_shortcut_label_shadow_color">#66000000</color>
+
+    <!--  Quickview colors -->
+    <color name="wgt_quickview_label_shadow_color">#40000000</color>
+    <color name="wgt_quickview_light_text_color">#ffffff</color>
+    <color name="wgt_quickview_content_divider_background_color">#000000</color>
+    <color name="wgt_quickview_grid_view_background_color">#ffffff</color>
+    <color name="wgt_quickview_content_background_color">#ffffff</color>
+    <color name="wgt_quickview_frame_background_color">#66000000</color>
+    <color name="wgt_quickview_header_menu_divider_color">#7f34B4E3</color>
+    <color name="wgt_quickview_base_line_color">#34B4E3</color>
+    <color name="wgt_quickview_item_error_text_color">#FCCC</color>
+    <color name="wgt_quickview_see_more_bounds">#26ffffff</color>
+</resources>

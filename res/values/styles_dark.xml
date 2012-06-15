@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--This is the underlying body of the quickview content under the quickview header-->
+    <style name="wgt_quickview_dark_body_bg">
+        <item name="android:background">@drawable/wgt_background_holo_dark</item>
+    </style>
+    <!--This is the background for empty cases, such as "You have no contacts, tap here to add"-->
+    <style name="wgt_quickview_dark_body_empty_case_bg">
+        <item name="android:background">@drawable/wgt_background_holo_dark</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+     <style name="wgt_quickview_titlebar_frame">
+        <item name="android:paddingTop">1dp</item>
+        <item name="android:paddingLeft">1dp</item>
+        <item name="android:paddingRight">1dp</item>
+        <item name="android:background">#16698E</item>
+    </style>
+    <style name="wgt_quickview_content_frame">
+        <item name="android:paddingBottom">1dp</item>
+        <item name="android:paddingLeft">1dp</item>
+        <item name="android:paddingRight">1dp</item>
+        <item name="android:background">#16698E</item>
+    </style>
+<!--Generic title color for dark UI-->
+    <style name="wgt_quickview_list_item_title_dark">
+            <item name="android:textColor">#ffffff</item>
+    </style>
+<!--More element styling for dark UI-->
+    <style name="wgt_quickview_more_dark">
+            <item name="android:textColor">@android:color/white</item>
+            <item name="android:singleLine">true</item>
+            <item name="android:textSize">16sp</item>
+    </style>
+<!--Dark UI collection header-->
+    <style name="wgt_dark_header_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!-- See comments for @dimen/list_section_divider_min_height -->
+        <item name="android:minHeight">@dimen/wgt_divider_base_line_height_dark</item>
+        <item name="android:background">@drawable/wgt_list_section_divider_holo_custom</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#33B5E5</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">0dip</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+</resources>

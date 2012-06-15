@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/quickview_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+>
+<!--Quickview header data tag-->
+<include layout="@layout/wgt_quickview_header_tag" />
+    <!-- Titlebar and text display -->
+    <!--In order to get the dark UI blue borders around the quickview, we're going to have to wrap the header in a linear layout as opposed to just adding a background-->
+    <LinearLayout
+        style="@style/wgt_quickview_titlebar_frame"
+        android:id="@+id/widget_titlebar_frame"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/wgt_quickview_header_bg_margin_top"
+    >
+    <LinearLayout
+        android:id="@+id/widget_titlebar_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/wgt_quickview_header_bg"
+    >
+    <LinearLayout
+        android:id="@+id/widget_titlebar_base_title"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layoutAnimation="@anim/fade_slide_in_anim"
+    >
+        <TextView
+            android:id="@+id/widget_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/wgt_quickview_header_title"
+            android:textStyle="bold"
+            android:textColor="?android:attr/textColorPrimary"
+            android:shadowColor="@color/wgt_quickview_label_shadow_color"
+            android:shadowRadius="2.0"
+            android:shadowDy="1.0"
+            android:freezesText="true"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/wgt_quickview_header_title_margin_top"
+            android:paddingLeft="@dimen/wgt_quickview_header_title_padding_left"
+            android:paddingRight="@dimen/wgt_quickview_header_title_padding_right"
+            android:layout_gravity="center_vertical"
+            android:text="TestQV"/>
+        <TextView
+            android:id="@+id/widget_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/wgt_quickview_header_subtitle"
+            android:textColor="?android:attr/textColorPrimary"
+            android:shadowColor="@color/wgt_quickview_label_shadow_color"
+            android:shadowRadius="2.0"
+            android:shadowDy="1.0"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:gravity="bottom"
+            android:layout_marginTop="0dp"
+            android:paddingLeft="@dimen/wgt_quickview_header_subtitle_padding_left"
+            android:paddingRight="@dimen/wgt_quickview_header_title_padding_right"
+            android:paddingBottom="1dp"
+            android:layout_gravity="center_vertical"
+            android:text="Test subtitle"/>
+    </LinearLayout>
+    <!-- Start title bar menu -->
+    <LinearLayout
+        android:id="@+id/widget_titlebar_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layoutAnimation="@anim/infinite_glow_anim"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/widget_titlebar_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:src="@drawable/warning"
+            android:maxWidth="@dimen/wgt_header_button_width"
+            android:paddingRight="@dimen/wgt_header_button_padding"
+            android:paddingLeft="@dimen/wgt_header_button_padding"
+            android:layout_gravity="center" />
+    </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+    <!-- END titlebar and text display -->
+    <!--  Logo display -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+    >
+        <ImageView
+            android:id="@+id/widget_logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="-10dp"
+            android:paddingLeft="@dimen/wgt_quickview_header_badge_padding_left"
+            android:paddingRight="@dimen/wgt_quickview_header_badge_padding_right"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_launcher_quickview_calendar"/>
+          <!-- Calendar exception code -->
+        <TextView
+            android:id="@+id/widget_logo_txt1"
+            android:singleLine="true"
+            android:layout_width="@dimen/wgt_shortcut_calendar_title_width"
+            android:ellipsize="marquee"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/widget_logo"
+            android:layout_alignTop="@id/widget_logo"
+            android:paddingLeft="@dimen/wgt_shortcut_calendar_item_padding"
+            android:paddingTop="@dimen/wgt_shortcut_icon_padding"
+            style="@style/wgt_quickview_logo_txt1"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/widget_logo_txt2"
+            style="@style/wgt_quickview_logo_txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@id/widget_logo"
+            android:paddingBottom="@dimen/wgt_shortcut_calendar_item_padding"
+            android:visibility="gone" />
+        <!-- END calendar exception code -->
+    </RelativeLayout>
+    <!-- END Logo display -->
+</RelativeLayout>

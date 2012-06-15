@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--This is the underlying body of the quickview content under the quickview header-->
+    <style name="wgt_quickview_light_body_bg">
+        <item name="android:background">@color/wgt_quickview_frame_background_color</item>
+    </style>
+    <!--This is the background for empty cases, such as "You have no contacts, tap here to add"-->
+    <style name="wgt_quickview_light_body_empty_case_bg">
+        <item name="android:background">@color/wgt_quickview_content_background_color</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="Theme" parent="android:Theme">
+</style>
+<style name="Theme.Quickview" parent="android:Theme.Dialog">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+</style>
+  <style name="Theme.Transparent" parent="android:Theme">
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:backgroundDimEnabled">true</item>
+  </style>
+
+<!--    <item name="android:windowAnimationStyle">@style/Animations</item> -->
+
+    <style name="wgt_shortcut_unread_count">
+        <item name="android:textColor">@color/wgt_shortcut_unread_count_color</item>
+        <item name="android:textSize">14dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowColor">@color/wgt_shortcut_label_shadow_color</item>
+    </style>
+
+    <!-- Match with homescreen's style for shortcut label -->
+    <style name="wgt_shortcut_label">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">6</item>
+        <item name="android:shadowColor">#000000</item>
+    </style>
+
+    <style name="wgt_shortcut_txt1">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">10dip</item>
+        <item name="android:textColor">#13286d</item>
+    </style>
+
+    <style name="wgt_shortcut_txt2">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24dip</item>
+        <item name="android:textColor">#13286d</item>
+    </style>
+
+    <style name="wgt_quickview_list_empty_text">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/wgt_quickview_content_empty_view_padding</item>
+        <item name="android:paddingRight">@dimen/wgt_quickview_content_empty_view_padding</item>
+    </style>
+
+    <style name="wgt_quickview_list_item">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="android:layout_marginLeft">16dip</item>
+        <item name="android:layout_marginRight">8dip</item>
+    </style>
+
+    <style name="wgt_quickview_more">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+        <style name="wgt_quickview_collection_header">
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/wgt_quickview_light_text_color</item>
+    </style>
+
+    <style name="wgt_quickview_logo_txt1">
+        <item name="android:layout_marginLeft">8dip</item>
+        <item name="android:layout_marginTop">2.5dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">#13286d</item>
+    </style>
+
+    <style name="wgt_quickview_logo_txt2">
+        <item name="android:layout_marginTop">16dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">34dp</item>
+        <item name="android:textColor">#13286d</item>
+    </style>
+
+    <!-- Error item text in quickview -->
+    <style name="wgt_quickview_item_error_txt">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/wgt_quickview_item_error_text_color</item>
+        <item name="android:paddingTop">25dp</item>
+        <item name="android:paddingBottom">25dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+    
+    <!-- just defines top layer "Animation" -->
+<style name="Animation" />
+
+</resources>

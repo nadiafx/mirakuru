@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/wgt_quickview_content_padding_dark"
+    android:paddingRight="@dimen/wgt_quickview_content_padding_dark"
+    android:paddingTop="@dimen/wgt_quickview_section_header_padding_top_dark"
+>
+	<TextView
+	    android:id="@+id/wgt_quickview_collection_header_title_dark"
+	    style="@style/wgt_dark_header_style"/>
+
+	<ImageView
+	    android:id="@+id/call_log_divider"
+	    android:layout_width="match_parent"
+	    android:layout_height="1px"
+	    android:background="#55ffffff"
+	/>
+</LinearLayout>

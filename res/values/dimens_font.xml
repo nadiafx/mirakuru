@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Quickview related dimensions -->
+    <dimen name="wgt_quickview_content_generic_divider_title">13sp</dimen>
+    <dimen name="wgt_quickview_content_empty_view_text">13sp</dimen>
+    <dimen name="wgt_quickview_header_title">16sp</dimen>
+    <dimen name="wgt_quickview_header_subtitle">14sp</dimen>
+    <!-- Shortcut related dimensions -->
+    <dimen name="wgt_shortcut_label_text_size">14sp</dimen>
+</resources>
