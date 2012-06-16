@@ -12,7 +12,8 @@
         <activity
             android:label="MIRAKURU"
             android:name=".Mirakuru"
-            android:theme="@android:style/Theme.NoTitleBar">
+            android:screenOrientation="landscape" 
+            android:theme="@android:style/Theme.Holo.NoActionBar">
             <intent-filter >
                 <action android:name="android.intent.action.MAIN" />
 
