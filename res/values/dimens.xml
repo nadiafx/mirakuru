@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- Quick View margins -->
-    <dimen name="quickview_vert_margin">85dip</dimen>
-    <dimen name="quickview_horiz_margin">45dip</dimen>
-</resources>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.hshieh.animation"
+    package="com.pandalan.mirakuru"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -8,11 +8,11 @@
 
     <application
         android:icon="@drawable/kirby"
-        android:label="ActivityQVanim">
+        android:label="MIRAKURU">
         <activity
-            android:label="ActivityQVanim"
-            android:name=".Gallery"
-            android:theme="@style/Theme.Transparent">
+            android:label="MIRAKURU"
+            android:name=".Mirakuru"
+            android:theme="@android:style/Theme.NoTitleBar">
             <intent-filter >
                 <action android:name="android.intent.action.MAIN" />
 
